@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 28 12:46:24 IST 2018</td>
+<td>Started on:</td><td>Mon Oct 15 11:57:59 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1706 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31173 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCases.LoginTest.loginAsRegsiteredUser()'><b>loginAsRegsiteredUser</b><br>Test class: testCases.LoginTest</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element is not visible
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&apos;store_selector_main&apos;]/div/div/div[3]/div[1]/div[2]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
 System info: host: &apos;DESKTOP-L8UBU2Q&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9928, moz:profile: C:\Users\sam\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 225171fa-758c-4115-b270-1f16d5b6a98d
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10244, moz:profile: C:\Users\sam\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 030e3bcc-f6bf-49e4-9fd8-f8649ec4a641
+*** Element info: {Using=xpath, value=//*[@id=&apos;store_selector_main&apos;]/div/div/div[3]/div[1]/div[2]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -92,9 +94,11 @@ Session ID: 225171fa-758c-4115-b270-1f16d5b6a98d
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at testCases.LoginTest.loginAsRegsiteredUser(LoginTest.java:31)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at testCases.LoginTest.loginAsRegsiteredUser(LoginTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -120,13 +124,15 @@ Session ID: 225171fa-758c-4115-b270-1f16d5b6a98d
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace524223214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace524223214'><pre>org.openqa.selenium.ElementNotInteractableException: Element is not visible
+</pre></div><a href='#' onClick='toggleBox("stack-trace1936550492", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1936550492'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&apos;store_selector_main&apos;]/div/div/div[3]/div[1]/div[2]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
 System info: host: &apos;DESKTOP-L8UBU2Q&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9928, moz:profile: C:\Users\sam\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 225171fa-758c-4115-b270-1f16d5b6a98d
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10244, moz:profile: C:\Users\sam\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 030e3bcc-f6bf-49e4-9fd8-f8649ec4a641
+*** Element info: {Using=xpath, value=//*[@id=&apos;store_selector_main&apos;]/div/div/div[3]/div[1]/div[2]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -137,9 +143,11 @@ Session ID: 225171fa-758c-4115-b270-1f16d5b6a98d
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at testCases.LoginTest.loginAsRegsiteredUser(LoginTest.java:31)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at testCases.LoginTest.loginAsRegsiteredUser(LoginTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -166,8 +174,8 @@ Session ID: 225171fa-758c-4115-b270-1f16d5b6a98d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>testCases.LoginTest@1ed4004b</td></tr>
+<td>31</td>
+<td>testCases.LoginTest@3d74bf60</td></tr>
 </table><p>
 </body>
 </html>
